@@ -9,6 +9,7 @@ class Formatter {
   
   static titleize(string) {
     let arrayOfStringExceptions = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
-    let titleizedString = 
+    let titleizedString = string.split(' ').map(word => nonCapitalizeWords.includes(word) ? word : this.capitalize(word)).join(' ');
+    return this.capitalize(titleizedString);
   }
 }
