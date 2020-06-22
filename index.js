@@ -8,6 +8,7 @@ class Formatter {
   }
   
   static titleize(string) {
-    arrayOfStringExceptions = []
+    let arrayOfStringExceptions = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
+    
   }
 }
